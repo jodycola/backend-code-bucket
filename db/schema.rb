@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2021_03_09_200859) do
   create_table "collections", force: :cascade do |t|
     t.string "name"
     t.integer "user_id"
-    t.integer "project_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -28,6 +27,7 @@ ActiveRecord::Schema.define(version: 2021_03_09_200859) do
     t.string "html"
     t.string "javascript"
     t.string "css"
+    t.integer "project_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image_url"

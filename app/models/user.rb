@@ -9,8 +9,4 @@ class User < ApplicationRecord
         }
     end
 
-    def name_plus_10
-        "#{self.name} 10"
-    end
-
 end

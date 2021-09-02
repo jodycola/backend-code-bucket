@@ -5,6 +5,7 @@ class CreateProjects < ActiveRecord::Migration[6.1]
       t.string :html
       t.string :javascript
       t.string :css
+      t.integer :project_id
 
 
       t.timestamps
